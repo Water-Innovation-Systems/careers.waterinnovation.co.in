@@ -7,7 +7,7 @@
 <title>Water Innovation Systems - Careers</title>
     <link rel="icon" type="image/png" href="logo_icon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -210,68 +210,89 @@ footer{
     height:50px;
     margin-bottom:10px;
 }
-    
-    
+
+:root{--ink:#102c32;--deep:#0b242a;--sea:#087f78;--mint:#b9f1dc;--paper:#f2f7f4;--muted:#607477;--line:#dce7e2}
+*{font-family:"DM Sans",sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{background:var(--paper);color:var(--ink)}
+.header{top:0;padding:22px clamp(22px,6vw,88px)}
+.header>div{color:white;font-size:13px;font-weight:700;text-transform:uppercase}
+.logo{width:auto;height:48px;object-fit:contain}
+.hero{height:78vh;min-height:590px;max-height:820px;padding:100px clamp(24px,10vw,150px);background-position:center 48%}
+.hero::after{background:linear-gradient(90deg,rgba(7,28,33,.93),rgba(7,28,33,.75) 47%,rgba(7,28,33,.12))}
+.hero-content{max-width:650px;animation:rise-in .8s ease-out both}
+.hero h1{max-width:620px;margin:20px 0 16px;font-family:"DM Serif Display",serif;font-size:64px;font-weight:400;line-height:1.04}
+.hero span{color:var(--mint);font-family:inherit}
+.hero p{max-width:430px;margin-top:0;color:rgba(255,255,255,.82);font-size:17px;line-height:1.7}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--mint);font-size:12px;font-weight:700;text-transform:uppercase}
+.hero-kicker::before{width:28px;height:2px;background:#f4a66a;content:""}
+.hero-link{display:inline-flex;align-items:center;gap:22px;margin-top:30px;padding:14px 19px;background:var(--mint);color:var(--deep);font-size:14px;font-weight:700;text-decoration:none;transition:background .2s ease,transform .2s ease}
+.hero-link:hover{background:white;transform:translateY(-2px)}
+.main-card{margin:0;padding:72px clamp(22px,7vw,100px) 84px}
+.section-heading{max-width:1200px;margin:0 auto 34px}
+.section-heading p{color:var(--sea);font-size:12px;font-weight:700;text-transform:uppercase}
+.section-heading h2{margin-top:8px;font-family:"DM Serif Display",serif;font-size:42px;font-weight:400;line-height:1.15}
+.card{display:grid;grid-template-columns:minmax(0,1fr) 360px;align-items:start;gap:64px;max-width:1200px;margin:0 auto;padding:0;background:transparent;backdrop-filter:none}
+.left{min-width:0;line-height:1.7}
+.left h2{margin-bottom:8px;font-family:"DM Serif Display",serif;font-size:30px;font-weight:400;line-height:1.2}
+.left p{margin-bottom:12px;color:var(--muted);font-size:15px}
+.left ul{padding-left:19px;margin:8px 0 20px}
+.left li{padding-left:3px;margin-bottom:6px;color:#385156;font-size:14px}
+.left li::marker{color:var(--sea)}
+.section-title{margin:22px 0 8px;color:var(--sea);font-size:12px;font-weight:700;text-transform:uppercase}
+.left hr{height:1px;margin:34px 0;border:0;background:var(--line)}
+.portal-btn{display:inline-flex;align-items:center;gap:14px;margin-top:10px;padding:12px 16px;border:1px solid var(--sea);background:transparent;color:var(--sea);font-size:14px;font-weight:700;text-decoration:none;transition:background .2s ease,color .2s ease}
+.portal-btn:hover{background:var(--sea);color:white}
+.right{position:sticky;top:24px;padding:27px;border:1px solid var(--line);border-radius:6px;background:white;box-shadow:0 16px 40px rgba(16,44,50,.08);color:var(--ink)}
+.right h3{margin-bottom:5px;text-align:left;font-family:"DM Serif Display",serif;font-size:27px;font-weight:400}
+.form-intro{margin:0 0 16px;color:var(--muted);font-size:13px;line-height:1.5}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.form-field{display:block;min-width:0;margin-top:13px;color:#344c50;font-size:12px;font-weight:700}
+.form-field.full{grid-column:1/-1}
+input,select{display:block;width:100%;min-height:44px;margin-top:6px;padding:10px 11px;border:1px solid #d5e0dc;border-radius:3px;background:#fbfdfc;color:var(--ink);font-size:13px}
+input:focus,select:focus{outline:2px solid rgba(8,127,120,.2);border-color:var(--sea)}
+input[type="file"]{padding:8px;font-size:11px}
+.btn{min-height:48px;margin-top:19px;border:0;border-radius:3px;font-size:14px;transition:background .2s ease,transform .2s ease}
+.apply-btn{background:var(--sea);color:white}
+.apply-btn:hover{transform:translateY(-1px);background:#066761}
+.right small{display:block;margin-top:12px;color:var(--muted);font-size:11px;text-align:center}
+.features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:0;padding:44px clamp(22px,7vw,100px);background:var(--deep)}
+.feature{max-width:none;padding:4px 26px;border-right:1px solid rgba(255,255,255,.16);text-align:left}
+.feature:last-child{border-right:0}
+.feature h4{margin:0 0 7px;color:var(--mint);font-size:16px}
+.feature p{color:rgba(255,255,255,.7);font-size:13px}
+footer{padding:24px 20px;background:var(--deep);color:rgba(255,255,255,.68);font-size:12px}
+.footer-logo{width:auto;height:38px;margin:0 7px 10px;object-fit:contain}
+@keyframes rise-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){.card{grid-template-columns:minmax(0,1fr) 320px;gap:32px}.right{padding:21px}}
+@media(max-width:700px){.header{padding:18px 22px}.logo{height:40px}.hero{height:78vh;min-height:560px;padding:110px 25px 70px;background-position:58% center}.hero::after{background:linear-gradient(90deg,rgba(7,28,33,.9),rgba(7,28,33,.48))}.hero h1{font-size:44px}.hero p{font-size:15px}.main-card{padding:54px 22px 60px}.section-heading h2{font-size:35px}.card{grid-template-columns:1fr;gap:34px}.right{position:static}.features{grid-template-columns:1fr 1fr;gap:24px 0;padding:36px 22px}.feature:nth-child(2){border-right:0}.feature:nth-child(3),.feature:nth-child(4){padding-top:17px;border-top:1px solid rgba(255,255,255,.16)}}
+@media(max-width:420px){.header>div{font-size:11px}.hero h1{font-size:39px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.feature{padding-right:12px;padding-left:12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
-
-<!-- DEVICE SCRIPT -->
-
-<script>
-(function () {
-
-    function getDeviceType() {
-        const width = window.innerWidth;
-
-        if (width <= 480) {
-            return "mobile";
-        } else if (width > 480 && width <= 1024) {
-            return "tablet";
-        } else {
-            return "desktop";
-        }
-    }
-
-    function redirectUser() {
-        const device = getDeviceType();
-        const path = window.location.pathname;
-
-        if (path.includes("mobile/index.html") || path.includes("tablet/index.html")) {
-            return;
-        }
-
-        if (device === "mobile") {
-            window.location.replace("mobile/index.html");
-        } 
-        else if (device === "tablet") {
-            window.location.replace("tablet/index.html");
-        }
-    }
-
-    redirectUser();
-
-})();
-</script>
-
-<script>
-</script>
 
 </head>
 
 <body>
 
 <div class="header">
-    <img src="logo_white.png" class="logo">
+    <img src="logo_white.png" class="logo" alt="Water Innovation Systems">
     <div>Careers</div>
 </div>
 
 <div class="hero">
     <div class="hero-content">
+        <div class="hero-kicker">Careers at Water Innovation Systems</div>
         <h1>Build a Sustainable <span>Future with Us</span></h1>
         <p>Innovating water solutions for a better tomorrow.</p>
+        <a class="hero-link" href="#open-roles">Explore open roles <span aria-hidden="true">&#8594;</span></a>
     </div>
 </div>
 
-<div class="main-card">
+<main class="main-card" id="open-roles">
+<div class="section-heading">
+    <p>Make your work matter</p>
+    <h2>Find your next opportunity.</h2>
+</div>
 <div class="card">
 
 <div class="left">
@@ -344,29 +365,43 @@ We are seeking a skilled and motivated Service Engineer to handle installation, 
     <li>Experience in water treatment / pump industry preferred</li>
 </ul>
 
-<button class="portal-btn" onclick="https://formsubmit.co/itsupport@waterinnovation.co.in">
-Apply filling Details >>>>>
-</button>
+<a class="portal-btn" href="#application">Apply for this role <span aria-hidden="true">&#8594;</span></a>
 </div>
 
-<div class="right">
+<aside class="right" id="application">
     <h3>Quick Apply</h3>
-
-
-
-
+    <p class="form-intro">Tell us a little about yourself and attach your resume.</p>
 
 <form action="https://formsubmit.co/itsupport@waterinnovation.co.in" method="POST" enctype="multipart/form-data">
 
-<input type="hidden" name="_subject" value="New Job Application"> <input type="hidden" name="_captcha" value="false">
-
-<!-- ✅ REDIRECT FIX ADDED (NO OTHER CHANGE) -->
-
+<input type="hidden" name="_subject" value="New Job Application">
+<input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_next" value="https://waterinnovationsystems.github.io/careers.waterinnovation.co.in/thankyou.html">
 
-<input type="text" name="Candidate Name" placeholder="Candidate Name" required> <input type="email" name="Email" placeholder="Email ID" required> <input type="text" name="Current Company" placeholder="Current Company"> <input type="text" name="Current Applying For" placeholder="Sales & Marketing"> <input type="text" name="Current Applying For" placeholder="Service Engineer"> <input type="text" name="Experience" placeholder="Total Experience"> <input type="text" name="Current CTC" placeholder="Current CTC"> <input type="text" name="Expected CTC" placeholder="Expected CTC"> <input type="text" name="Reason to leave your Previous JOb" placeholder="Reason to leave Last Job"> <input type="text" name="Place" placeholder="Place"> <input type="text" name="Are able to Relocate" placeholder="Can you Relocate">
-
-<input type="file" name="attachment" required>
+<div class="form-grid">
+    <label class="form-field full">Full name<input type="text" name="Candidate Name" autocomplete="name" required></label>
+    <label class="form-field full">Email address<input type="email" name="Email" autocomplete="email" required></label>
+    <label class="form-field full">Role you're applying for
+        <select name="Current Applying For" required>
+            <option value="" disabled selected>Select a position</option>
+            <option value="Sales & Marketing Executive">Sales &amp; Marketing Executive</option>
+            <option value="Service Engineer">Service Engineer</option>
+        </select>
+    </label>
+    <label class="form-field full">Current company<input type="text" name="Current Company" autocomplete="organization"></label>
+    <label class="form-field">Experience<input type="text" name="Experience" placeholder="e.g. 3 years"></label>
+    <label class="form-field">Current location<input type="text" name="Place" autocomplete="address-level2"></label>
+    <label class="form-field">Current CTC<input type="text" name="Current CTC"></label>
+    <label class="form-field">Expected CTC<input type="text" name="Expected CTC"></label>
+    <label class="form-field full">Can you relocate?
+        <select name="Are able to Relocate">
+            <option value="">Select an option</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+    </label>
+    <label class="form-field full">Resume (PDF or Word)<input type="file" name="attachment" accept=".pdf,.doc,.docx" required></label>
+</div>
 
 <button class="btn apply-btn">Submit Application</button>
 
@@ -381,18 +416,11 @@ Apply filling Details >>>>>
 
     
 
-<script>
-function applyJob() {
-window.location.href = "thankyou.html";
-}
-</script>
-
 <small>We respect your privacy. No spam.</small>
+</aside>
 
 </div>
-
-</div>
-</div>
+</main>
 
 <div class="features">
     <div class="feature">
@@ -420,7 +448,7 @@ window.location.href = "thankyou.html";
 </div>
 
 <footer>
-    <img src="logo_white.png" class="footer-logo"> |  <img src="Milton Roy1.png" class="footer-logo">
+    <img src="logo_white.png" class="footer-logo" alt="Water Innovation Systems"> |  <img src="Milton Roy1.png" class="footer-logo" alt="Milton Roy">
     <p>© 2026 Water Innovation Systems | All Rights Reserved | We respect your privacy. No spam.</p>
 </footer>
 
